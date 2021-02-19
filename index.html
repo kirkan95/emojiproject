@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class = "container main-container">
+        <div class="wrapper">
+            <video src="videos/Scrolling on Phone.mp4" loop autoplay>
+            </video>
+        </div>
+        <h1>emojis: where they came from</h1>
+    </div>
+
+    <div class = "container scrolling-container">
+        <div class = "container text">
+            <p>
+                Some of your favorite food emojis are the products of change.org petitions. 
+                Others were backed by corporate marketing campaigns. 
+                That Chinese takeout emoji? A major source of contention. 
+            </p>
+        </div>
+        <div class = "container text">
+            <p>
+                As emojis expanded from whimsical stand-ins to proof of representation—influence, 
+                even—in one of the most ubiquitous interfaces we use, the origin story behind 
+                every 😂 and 🎮 became of cultural import on its own.            
+            </p>
+        </div>
+        <div class = "container text">
+            <p>
+                Here are the thousand words behind each picture.             
+            </p>
+        </div>
+
+        <div id="set-height"></div>
+
+        <video id="v0" tabindex="0", autobuffer preload>
+            <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="videos/emojiscroll.mp4"></source>
+        </video>
+
+        <script>
+            const vid = document.getElementById('v0');
+            
+
+            
+        </script>
+
+        <!-- <script>
+            enterView({
+                selector: 'text',
+                enter: function(el) {
+                    el.classList.add('entered');
+                }
+            })
+        
+            var frameNumber = 0, // start video at frame 0
+            // lower numbers = faster playback
+            playbackConst = 400, 
+            // get page height from video duration
+            setHeight = document.getElementById("set-height"), 
+            // select video element         
+            vid = document.getElementById('v0'); 
+    
+            // dynamically set the page height according to video length
+            vid.addEventListener('loadedmetadata', function() {
+            setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+            });
+    
+    
+            // Use requestAnimationFrame for smooth playback
+            function scrollPlay(){  
+                var frameNumber  = window.pageYOffset/playbackConst;
+                vid.currentTime  = frameNumber;
+                window.requestAnimationFrame(scrollPlay);
+            }
+        
+            window.requestAnimationFrame(scrollPlay);
+        
+        </script> -->
+
+    </div>
+
+
+</body>
+</html>
